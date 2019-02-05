@@ -33,8 +33,8 @@ class App extends Component {
                 className="icon-waitlist"
                 src={list}
                 alt="list"
-                width="25px"
-                height="25px"
+                width="45px"
+                height="45px"
               />
               <h1>Ordered spots on the waitlist</h1>
 
@@ -47,8 +47,8 @@ class App extends Component {
                 className="icon-cancel"
                 src={cancel}
                 alt="cancel"
-                width="25px"
-                height="25px"
+                width="45px"
+                height="45px"
               />
               <h1>Cancel the waitlist</h1>
 
@@ -61,8 +61,8 @@ class App extends Component {
                 className="icon-blackout"
                 src={blackout}
                 alt="blackout"
-                width="25px"
-                height="25px"
+                width="45px"
+                height="45px"
               />
               <h1>Blackout period</h1>
 
@@ -87,7 +87,7 @@ class App extends Component {
                   find players to fill in for cancelled spots are over!
                 </p>
 
-                <ul>
+                <ul className="lists">
                   <li>
                     When your event fills, players can click “Join Waitlist” and
                     immediately view their position on the waitlist!
@@ -128,6 +128,66 @@ class App extends Component {
                   </div>
                 </div>
               </div>
+            </section>
+            <section>
+              <h1 height="300px">quote</h1>
+            </section>
+
+            <section id="blackout">
+              <div className="blackout-rt-col">
+                <h1>
+                  Ease your players worries when it comes to checking if a spot
+                  has opened
+                </h1>
+                <p>
+                  Your players don’t want to miss a chance at securing their
+                  spot to your event if it becomes available while they are
+                  sleeping! We created a blackout period to ease their mind so
+                  they can get some zzzz’s
+                </p>
+                <ul className="lists">
+                  <li>
+                    The waitlist “blackout” period is from 10pm to 9am. If a
+                    spot on the waitlist opens at 10:01pm, the first person on
+                    the waitlist will have until 9am to respond*
+                  </li>
+                  <li>
+                    Players do not need to worry about “checking their email
+                    regularly” to make sure they do not miss out on their spot
+                  </li>
+                  <li>
+                    Instant notifications through the app and email ensure
+                    players don’t miss their spot
+                  </li>
+                  <div>*as long as the event is at least 16 hours away</div>
+                </ul>
+              </div>
+            </section>
+
+            <section id="waitlist-hold">
+              <p>
+                As your event gets closer, you need your waitlist to cycle
+                through players faster. By default, OpenSports holds a spot for
+                two hours to give the player time to view the notification and
+                claim their spot. As your event gets closer, the OpenSports
+                waitlist gives players less time to claim their spot before the
+                spot is given to the next person on the waitlist.
+              </p>
+              <h1>timeline animation</h1>
+              <ul className="lists">
+                <li>
+                  If the event is more than sixteen hours in the future; the
+                  spot has a two hour hold;
+                </li>
+                <li>
+                  If the event is 16 hours to 1 hour away, there is a 30 minute
+                  hold;
+                </li>
+                <li>
+                  If the event is less than one hour away, there is a 10 minute
+                  hold.
+                </li>
+              </ul>
             </section>
           </div>
         </header>
